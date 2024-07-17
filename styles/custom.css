@@ -1,0 +1,978 @@
+/* ------------------------------------------------------------------------
+                        General CSS Starts Here
+------------------------------------------------------------------------*/
+
+:root {
+    --white: #fff;
+    --tp-theme-primary: #f84074;
+    --tp-theme-secondary: #f4f4f4;
+    --tp-common-gray: #f4f4f4;
+    --dar_blue: #282850;
+    --light_white: #e9e9e9;
+}
+
+/* dark blue starts here */
+
+.tp-section-title-pre,
+.tp-section-title-pre-2,
+.tp-support-list ul li i {
+    color: var(--dar_blue);
+}
+
+.tp-work-icon b,
+.tp-work-icon::after,
+.tp-work-icon::before {
+    background-color: var(--dar_blue);
+}
+
+/* dark blue ends here */
+
+/* pink bg starts here */
+
+.tp-benefits-progressbar,
+.tp-faq .accordion .accordion-button:not(.collapsed),
+.tp-faq .accordion .accordion-button .accordion-btn,
+.section_h_h_s_i {
+    background-color: var(--tp-theme-primary);
+}
+
+/* pink bg starts here */
+
+/* light grey bg */
+
+.tp-counter-icon span,
+.tp-benefits-icon span {
+    background-color: var(--tp-common-gray);
+}
+
+/* light grey bg starts here */
+
+/* dark bg theme color */
+
+.dark_bg .tp-section-title-pre,
+.dark_bg .tp-section-title,
+.tp-support-title-wrapper .tp-section-title-pre {
+    color: #fff;
+}
+
+/* dark bg starts here */
+
+/* light white starts here */
+
+.tp-footer-send p,
+.tp-footer-widget-content p,
+.tp-footer-widget-contact-inner a,
+.tp-footer-widget-contact-inner a i,
+.disclaimer_p h3,
+.tp-footer-widget-content ul li a,
+.disclaimer_p marquee,
+.tp-footer-copyright-inner p,
+.tp-categories-3-btn p {
+    color: var(--light_white) !important;
+}
+
+/* light white ends here */
+
+.tp-footer-widget-content ul li:hover a,
+.tp-footer-widget-content ul li::after {
+    color: var(--dar_blue) !important;
+}
+
+.section_padding_py {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+}
+
+.tp-section-title-pre-2::after {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* for header */
+
+.tp-main-menu ul li a {
+    font-weight: 800;
+}
+
+.tp-main-menu ul li a.active {
+    color: var(--tp-theme-primary);
+}
+
+.main_header_left {
+    display: flex !important;
+    align-items: center;
+    gap: 60px;
+}
+
+@media (width >=1200px) {
+    .main_header_left {
+        justify-content: center;
+    }
+}
+
+@media (width <=1199.98px) {
+    .main_header_left {
+        justify-content: space-between;
+    }
+}
+
+@media (width <=767.98px) {
+    .main_header_left {
+        gap: 34px;
+    }
+}
+
+.dark_bg h2,
+.dark_bg .tp-hero-2-subtitle {
+    color: var(--white);
+}
+
+/* for footer */
+
+.tp-footer-bg {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.disclaimer_p {
+    display: flex;
+    align-items: center;
+}
+
+.disclaimer_p h3 {
+    color: var(--tp-text-body);
+    font-weight: 700;
+    min-width: 175px;
+    font-size: 24px;
+}
+
+.disclaimer_p p {
+    font-size: 18px;
+}
+
+.back-to-top-btn {
+    border: 1px solid var(--tp-theme-primary);
+    color: var(--tp-theme-primary);
+    box-shadow: 0px 0px 5px #f84074;
+}
+
+.tp-footer-top .col-lg-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tp-footer-top .tp-footer-send p {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.tp-footer-top .tp-footer-btn .tp-btn {
+    background-color: var(--dar_blue);
+}
+
+.breadcrumb__content {
+    text-align: center;
+}
+
+.table td,
+.table th {
+    font-size: 16px;
+}
+
+.tp-preloader-logo img {
+    width: 120px !important;
+}
+
+.tp-footer-widget-contact-inner a {
+    display: inline-block;
+}
+
+.tp-footer-widget-contact-inner a i {
+    top: 5px;
+}
+
+.tp-footer-widget-content ul li:has(.active) {
+    margin-left: 15px;
+}
+
+.tp-footer-widget-content ul li a.active,
+.tp-footer-widget-content ul li::after,
+.tp-footer-widget-contact-inner a:hover span,
+.tp-footer-widget-contact-inner a:hover i {
+    color: var(--dar_blue) !important;
+}
+
+.tp-footer-widget-content ul li:has(.active):after {
+    opacity: 1;
+}
+
+.tp-footer-widget-contact-inner a.addr:hover i {
+    color: #fff !important;
+}
+
+@media (width <=1499.98px) {
+    .tp-footer-top .col-lg-12 {
+        justify-content: center;
+    }
+    .tp-footer-top .tp-footer-send p {
+        font-size: 40px;
+    }
+}
+
+@media(width <=1199.98px) {
+    .tp-footer-col-2 {
+        padding-left: 0;
+    }
+}
+
+@media (width <=991.98px) {
+    .tp-footer-top .tp-footer-send p {
+        font-size: 30px;
+    }
+}
+
+@media (width <=767.98px) {
+    .tp-footer-top .col-lg-12 {
+        flex-direction: column;
+        gap: 26px;
+    }
+    .tp-footer-top .tp-footer-send p {
+        margin-bottom: 0;
+        text-align: center;
+        letter-spacing: 0;
+    }
+}
+
+/* ------------------------------------------------------------------------
+                        General CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        Policy CSS Starts Here
+------------------------------------------------------------------------*/
+
+.policy_content p {
+    margin-bottom: 30px;
+}
+
+.policy_content h4 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: var(--tp-heading-primary);
+}
+
+.policy_content ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    transform: translateY(2px);
+    display: block;
+}
+
+.policy_content ul li::before {
+    font-family: flaticon_visa_and_immigration !important;
+    content: "\f106";
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------------
+                        Policy CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        Index page CSS starts Here
+------------------------------------------------------------------------*/
+
+#home .tp-hero-2-bg,
+#services,
+.section_h_g_a,
+.section_h_b_a_s,
+.tp-countries-visit-bg {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+#home .tp-hero-2-thumb::before {
+    display: none;
+}
+
+#home .tp-hero-2-thumb {
+    background-position: center;
+    background-size: contain;
+}
+
+#home .right_side_image {
+    max-width: 450px;
+    position: relative;
+    z-index: 99;
+}
+
+#home .tp-hero-2-title {
+    font-size: 140px;
+}
+
+.section_who_we_are .shape-3 h2 {
+    font-weight: 800;
+}
+
+.section_who_we_are .shape-3 h2::after {
+    content: "+";
+    margin-left: 10px;
+}
+
+.section_who_we_are .shape-3 h6 {
+    padding-left: 22px;
+}
+
+.section_h_w_m_d .tp-benefits-item {
+    width: 50%;
+}
+
+.tp-about-3-thumb .shape-1 {
+    max-width: 400px;
+    top: -40px;
+    left: -120px;
+}
+
+.tp-about-3-thumb .shape-2 {
+    right: -135px;
+    max-width: 430px;
+}
+
+.tp-about-icon-2 img {
+    margin-right: 20px;
+    -webkit-transition: all 0.3s 0s ease-out;
+    -moz-transition: all 0.3s 0s ease-out;
+    -ms-transition: all 0.3s 0s ease-out;
+    -o-transition: all 0.3s 0s ease-out;
+    transition: all 0.3s 0s ease-out;
+    width: 60px;
+}
+
+.tp-countries-visit-icon span img {
+    width: 60px;
+}
+
+.section_h_w_m_d .tp-benefits-thumb img {
+    position: absolute;
+    right: -80px;
+    top: 70px;
+    max-width: 475px;
+}
+
+.section_h_w_m_d .tp-benefits-icon span img {
+    max-width: 40px;
+}
+
+#services .tp-service-3-icon span,
+.section_h_w_m_d .tp-benefits-icon span,
+.section_h_b_a_s .tp-categories-3-icon span {
+    display: inline-flex;
+    place-content: center;
+}
+
+#services .tp-service-3-icon span img,
+.section_h_b_a_s .tp-categories-3-icon span img {
+    max-width: 50px;
+}
+
+.tp-countries-visit-item::before {
+    background-image: -webkit-linear-gradient( -90deg, #5b1b4f 0%, #5b1b4f 72%, rgb(19, 19, 19) 100%);
+}
+
+.tp-service-3-item:hover .tp-service-3-icon span {
+    background-color: #fff !important;
+}
+
+.tp-countries-thumb::after {
+    background-color: var(--dar_blue);
+}
+
+.tp-benefits-item:hover .tp-benefits-icon span,
+.tp-categories-3-item:hover .tp-categories-3-icon span {
+    background-color: var(--light_white);
+}
+
+.tp-service-3-item:hover .tp-service-3-content {
+    bottom: -58px;
+}
+
+.tp-service-3-item:hover .tp-service-3-thumb img {
+    filter: unset;
+    -webkit-filter: unset;
+    transform: scale(1.05);
+}
+
+.tp-service-3-item:hover .tp-service-3-thumb::after {
+    opacity: 0;
+}
+
+.tp-benefits-progressbar {
+    display: none;
+}
+
+.tp-categories-3-item::after {
+    transform: rotate(350deg);
+    right: -1px;
+    top: 23px;
+    -webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -ms-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+}
+
+.tp-countries-name {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.tp-countries-item:hover .tp-countries-name {
+    inset: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+@media (width >=1200px) and (width <=1499.98px) {
+    #home .tp-hero-2-title {
+        font-size: 115px;
+    }
+    #home .right_side_image {
+        max-width: 370px;
+    }
+    #home .col-lg-8.mb-50 {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (width <=1499.98px) {
+    .tp-about-3-thumb .shape-2 {
+        right: -90px;
+        max-width: 399px;
+    }
+    .tp-about-3-thumb .shape-2 {
+        right: -20px;
+        max-width: 300px;
+        top: 90px;
+    }
+    .tp-about-3-thumb .shape-2 {
+        right: -20px;
+        max-width: 300px;
+        top: 90px;
+    }
+    .tp-about-3-thumb .shape-1 {
+        max-width: 300px;
+        top: 0px;
+        left: -60px;
+    }
+    .section_h_w_m_d .tp-benefits-thumb img {
+        max-width: 400px;
+        right: 22px;
+    }
+    .tp-benefits-thumb-wrapper::after {
+        display: none;
+    }
+    .tp-about-3-thumb .shape-3 {
+        top: 400px;
+    }
+    .section_h_b_a_s .tp-categories-3-item {
+        padding: 0 25px 35px 25px;
+    }
+}
+
+@media (width <=1199.98px) {
+    .section_main_banner .col-xl-8,
+    .section_main_banner .col-xl-4 {
+        text-align: center;
+    }
+    #home.section_main_banner .tp-hero-2-title {
+        font-size: 100px;
+    }
+    .section_who_we_are .tp-hero-2-wrapper-slider .tp-hero-active img {
+        width: 100%;
+        height: 480px;
+    }
+    .section_h_w_m_d .tp-benefits-thumb img {
+        max-width: -webkit-fill-available;
+        position: unset;
+    }
+    .section_h_w_m_d .row {
+        align-items: center;
+    }
+    .section_h_h_s_i .tp-service-3-thumb img {
+        max-width: 100%;
+    }
+    .section_h_h_s_i .tp-service-3-content {
+        padding: 36px 18px;
+    }
+    .tp-categories-3-item::after {
+        transform: rotate(355deg);
+        right: -1px;
+        top: 23px;
+    }
+}
+
+@media (width <=991.98px) {
+    .section_who_we_are .tp-about-3-wrapper {
+        text-align: center;
+    }
+    .section_who_we_are .tp-about-signeture,
+    .section_who_we_are .tp-about-3-content {
+        justify-content: center;
+    }
+    .section_who_we_are .tp-hero-2-wrapper-slider .tp-hero-active img {
+        max-width: 360px;
+        height: 480px;
+    }
+    .section_who_we_are .col-lg-5 {
+        text-align: center;
+    }
+    .section_who_we_are .tp-hero-active .swiper-slide {
+        padding: 0 !important;
+    }
+    .section_who_we_are .tp-about-btn {
+        margin-right: 0;
+    }
+    .section_h_w_m_d .tp-benefits-thumb {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .section_h_w_m_d .tp-benefits-thumb img {
+        max-width: 400px;
+    }
+    .section_h_h_s_i .tp-service-3-item {
+        max-width: 370px;
+        margin: 0 auto 20px;
+    }
+    .tp-categories-3-item::after {
+        transform: rotate(352deg);
+    }
+}
+
+@media (width <=767.98px) {
+    #home.section_main_banner .tp-hero-2-title {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    #home .right_side_image {
+        max-width: 350px;
+    }
+    .tp-about-3-content .tp-about-icon-2 {
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    .section_who_we_are .tp-about-signeture {
+        margin-top: 20px;
+    }
+    .section_h_w_m_d .tp-benefits-item-wrapper {
+        flex-direction: column;
+    }
+    .section_h_w_m_d .tp-benefits-item {
+        width: 100%;
+    }
+    .tp-categories-3-item::after {
+        transform: rotate(356deg);
+    }
+    #country .tp-countries-thumb {
+        max-width: 350px;
+        margin: auto;
+    }
+    .section_h_g_a .tp-cta-title {
+        padding: 0 15px;
+    }
+}
+
+@media (width <=539.98px) {
+    #home.section_main_banner .tp-hero-2-title {
+        font-size: 50px;
+    }
+    #home .right_side_image {
+        max-width: 300px;
+    }
+    .tp-categories-3-item::after {
+        transform: rotate(354deg);
+    }
+}
+
+@media (width <=424.98px) {
+    .tp-about-3-content .tp-about-icon-2 {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (width <=374.98px) {
+    #home.section_main_banner .tp-hero-2-title {
+        font-size: 40px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    #home .right_side_image {
+        max-width: 250px;
+    }
+    .section_who_we_are .tp-hero-2-wrapper-slider .tp-hero-active img {
+        height: 360px;
+    }
+    .tp-categories-3-item::after {
+        transform: rotate(352deg);
+    }
+}
+
+/* ------------------------------------------------------------------------
+                        Index page CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        About Us page CSS starts Here
+------------------------------------------------------------------------*/
+
+.section_a_s_2 .tp-instagram-thumb img {
+    width: 100%;
+}
+
+.section_a_counter .tp-counter-icon span img {
+    max-width: 90px;
+}
+
+.s_a_a_g_c .tp-service-2-icon span {
+    display: inline-flex;
+    place-content: center;
+}
+
+.s_a_a_g_c .tp-service-2-icon span img {
+    max-width: 50px;
+}
+
+.section_a_k_t_g .tp-categories-icon span {
+    place-content: center;
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 42px;
+    color: var(--tp-common-white);
+    background: var(--tp-theme-secondary);
+}
+
+.section_a_k_t_g .tp-categories-icon span img {
+    max-width: 50px;
+}
+
+.section_a_y_j_b .tp-work-icon span {
+    display: inline-flex;
+    place-content: center;
+}
+
+.section_a_y_j_b .tp-work-icon span img {
+    max-width: 100px;
+}
+
+.tp-testimonial-active .swiper-pagination-bullet {
+    background-color: var(--white);
+}
+
+.tp-testimonial-active .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--tp-theme-primary);
+}
+
+.tp-service-2-item .tp-service-2-thumb::after {
+    background-color: var(--dar_blue);
+}
+
+.tp-service-2-item:hover .tp-service-2-icon span {
+    background-color: var(--light_white);
+}
+
+.tp-instagram-item:hover .tp-instagram-thumb img {
+    filter: unset;
+    -webkit-filter: unset;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.tp-instagram-item:hover .tp-instagram-thumb::after {
+    opacity: 0;
+}
+
+.section_a_f_c_f.tp-support-bg {
+    background-position: center center;
+}
+
+.tp-service-2-item:hover .tp-service-2-thumb::after {
+    width: 0;
+    height: 0;
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+    .tp-categories-content {
+        padding: 55px 0px 12px 4px;
+    }
+}
+
+@media (width <=991.98px) {
+    .s_a_a_g_c .tp-service-2-item {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (width <=767.98px) {
+    .s_a_a_g_c .tp-service-2-item {
+        max-width: 300px;
+    }
+    .tp-instagram-thumb {
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+@media (width <=374.98px) {
+    .s_a_a_g_c .tp-service-2-item {
+        max-width: 240px;
+    }
+    .section_a_f_c_f ul#myTab {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .section_a_f_c_f ul#myTab li button {
+        width: 100%;
+    }
+}
+
+@media (width <=319.98px) {
+    .section_a_f_c_f .tp-support-tab-content {
+        padding: 10px;
+    }
+    .section_a_f_c_f .tp-support-list,
+    .section_a_f_c_f .tp-support-text {
+        margin: 0 0 20px;
+    }
+    .section_a_f_c_f .tp-support-tab-thumb {
+        margin: auto;
+    }
+    .section_a_f_c_f .tp-support-tab-thumb img {
+        max-width: 220px;
+        margin: auto;
+    }
+}
+
+/* ------------------------------------------------------------------------
+                        About Us page CSS starts Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        Contact page CSS starts Here
+------------------------------------------------------------------------*/
+
+.section_contact_form .tp-contact-input input,
+.section_contact_form .tp-contact-input textarea {
+    margin-bottom: 0;
+}
+
+.section_contact_form .tp-contact-input {
+    margin-bottom: 45px;
+}
+
+.section_contact_form .tp-contact-input label.error {
+    color: red;
+    font-size: 16px;
+}
+
+.section_contact_form #contactForm.d-none,
+.section_contact_form #contactFormSuccess.d-none {
+    display: none !important;
+}
+
+.section_contact_form #contactForm.d-block {
+    display: block !important;
+}
+
+.section_contact_form #contactFormSuccess.d-block {
+    display: flex !important;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    min-height: 300px;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+}
+
+.tp-contact-wrap p {
+    position: relative;
+    padding-left: 26px;
+}
+
+.tp-contact-wrap i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+/* ------------------------------------------------------------------------
+                        Contact page CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        Ponts Table CSS Starts Here
+------------------------------------------------------------------------*/
+
+#ponits_table ul {
+    margin-top: 0 !important;
+}
+
+#ponits_table ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    transform: translateY(2px);
+    display: block;
+}
+
+#ponits_table ul li::before {
+    font-family: flaticon_visa_and_immigration !important;
+    content: "\f106";
+    margin-right: 10px;
+}
+
+#ponits_table .p_t_head {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#ponits_table .p_t_head a {
+    background: #fff;
+    border: 1px solid var(--tp-theme-primary);
+    color: var(--tp-theme-primary);
+}
+
+#ponits_table .p_t_head a.active {
+    background: var(--tp-theme-primary);
+    color: var(--tp-common-white);
+    border: 1px solid var(--tp-theme-primary);
+}
+
+#ponits_table .p_t_head~.pnts_tab_c {
+    display: none !important;
+}
+
+#ponits_table .p_t_head~.pnts_tab_c.active {
+    display: block !important;
+}
+
+@media (width <=767.98px) {
+    #ponits_table .p_t_head {
+        flex-direction: column;
+    }
+    #ponits_table .p_t_head a {
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------------------------------
+                        Ponts Table CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        FAQ Page CSS Starts Here
+------------------------------------------------------------------------*/
+
+.section_f_g_y_a .tp-faq-breadcrumb-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ------------------------------------------------------------------------
+                        FAQ Page CSS Ends Here
+------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------
+                        Hoe To Play Page CSS Ends Here
+------------------------------------------------------------------------*/
+
+.tp-categories-thumb::before {
+    display: none;
+}
+
+.tp-countries-3-item:hover::after {
+    background-image: -webkit-linear-gradient( 90deg, rgb(248 64 116), rgb(40 40 80)) !important;
+}
+
+.tp-countries-3-thumb {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--white);
+    margin: auto;
+    margin-bottom: 0;
+    display: inline-flex;
+    place-content: center;
+}
+
+.tp-countries-3-thumb img {
+    width: 60px;
+    height: auto;
+    border-radius: initial;
+    -webkit-border-radius: initial;
+    -moz-border-radius: initial;
+    -ms-border-radius: initial;
+    -o-border-radius: initial;
+    border: none;
+}
+
+.tp-countries-3-item {
+    padding: 40px 30px;
+}
+
+.tp-countries-3-item h4 {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.tp-countries-3-item:hover h4 a {
+    color: #fff;
+}
+
+.tp-blog-item:hover .tp-blog-thumb::before {
+    opacity: 0;
+}
+
+@media (width <=1499.98px) {
+    .section_h_o_u_p .tp-countries-3-item {
+        padding: 40px 25px;
+    }
+    .section_h_o_u_p .tp-countries-3-item h4 {
+        font-size: 18px;
+    }
+}
+
+/* ------------------------------------------------------------------------
+                        Hoe To Play Page CSS Ends Here
+------------------------------------------------------------------------*/
